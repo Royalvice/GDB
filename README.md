@@ -2,6 +2,8 @@
 ## Description
 This is an official implementation for the paper [GDB: Gated convolutions-based Document Binarization](https://arxiv.org/abs/2302.02073).
 
+“We are currently dedicating considerable effort towards the development of DocDiff and working overtime to ensure its timely completion. Once the accompanying research paper is accepted, we intend to release the GDB code promptly. Our target is to present the work at ICIP2023 in June.”
+
 This repository comprehensively collects the datasets that may be used in document binarization.
 ## Datasets
 

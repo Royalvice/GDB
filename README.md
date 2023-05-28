@@ -32,8 +32,8 @@ Below is a summary table of the datasets used for document binarization, along w
 
 
 ## To-do list
-- [ ] Add the code for training
-- [ ] Add the code for testing
+- [x] Add the code for training
+- [x] Add the code for testing
 - [ ] Add the code for pre-processing
 - [ ] Upload the pretrained weights
 - [x] Comprehensively collate document binarization benchmark datasets

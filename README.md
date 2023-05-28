@@ -2,13 +2,46 @@
 ## Description
 This is an official implementation for the paper [GDB: Gated convolutions-based Document Binarization](https://arxiv.org/abs/2302.02073).
 
-“We are currently dedicating considerable effort towards the development of DocDiff and working overtime to ensure its timely completion. Once the accompanying research paper is accepted, we intend to release the GDB code promptly. Our target is to present the work at ICIP2023 in June.”
-
-This repository comprehensively collects the datasets that may be used in document binarization.
+This repository also comprehensively collects the datasets that may be used in document binarization.
 ## Datasets
 
 Below is a summary table of the datasets used for document binarization, along with links to download them.
 
+## Environment
+
+- Python >= 3.7
+- torch >= 1.7.0
+- torchvision >= 0.8.0
+
+## Usage
+
+### Prepare the dataset
+
+**Note**: The pre-processing code is not provided yet. But it is on the way.
+
+You can download the datasets from the links below and put them in the `datasets_ori` folder. 
+When evaluating performance on the DIBCO2019 dataset, 
+first gather all datasets except for DIBCO2019 and place them in the `img` and `gt` folders under the `datasets_ori` directory.
+Then crop the images and ground truth images into patches (256 * 256) and place them in the `img` and `gt` folders under the `datasets/DIBCO2019` directory.
+Next, use the Otsu thresholding method to binaryze the images 
+under `datasets/img` and place the results in the `datasets/otsu` folder. 
+Use the Sobel operator to process the images under `datasets/img` 
+and place the results in the `datasets/sobel` folder. 
+With these preprocessing steps completed, 
+Pass `./datasets/img` as an argument for the `--dataRoot` parameter in `train.py` and begin training.
+### Training
+
+```shell
+python train.py
+```
+
+### Testing
+
+```shell
+python test.py
+```
+
+## Datasets
 
 | Dataset                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -35,6 +68,7 @@ Below is a summary table of the datasets used for document binarization, along w
 - [x] Add the code for training
 - [x] Add the code for testing
 - [ ] Add the code for pre-processing
+- [ ] Restruct the code
 - [ ] Upload the pretrained weights
 - [x] Comprehensively collate document binarization benchmark datasets
 - [ ] Add the code for evaluating the performance of the model

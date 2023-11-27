@@ -77,11 +77,14 @@ This work is permitted for academic research purposes only. For commercial use, 
 ## Citation
 - If this work is useful, please cite it as: 
 ```
-@article{yang2023gdb,
-  title={GDB: Gated convolutions-based Document Binarization},
-  author={Yang, Zongyuan and Xiong, Yongping and Wu, Guibin},
-  journal={arXiv preprint arXiv:2302.02073},
-  year={2023}
+@article{yang2024gdb,
+  title={GDB: gated convolutions-based document binarization},
+  author={Yang, Zongyuan and Liu, Baolin and Xiong, Yongping and Wu, Guibin},
+  journal={Pattern Recognition},
+  volume={146},
+  pages={109989},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
 
